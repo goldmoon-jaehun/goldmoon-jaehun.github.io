@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CKF Backup의 Google Drive 데이터 접근, 백업, 저장, 공유 및 접근 철회에 관한 개인정보처리방침입니다.">
+  <title>개인정보처리방침 | CKF Backup</title>
+  <style>
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { margin: 0; background: #f6f8fb; color: #1d2939; line-height: 1.75; }
+    main { max-width: 760px; margin: 70px auto; padding: 0 22px; }
+    article { background: white; border: 1px solid #e4e9f1; border-radius: 18px; padding: 36px; box-shadow: 0 6px 28px rgba(0,0,0,.035); }
+    h1 { margin-top: 0; font-size: 2rem; letter-spacing: -.03em; }
+    h2 { font-size: 1.15rem; margin-top: 30px; }
+    a { color: #165bb2; text-underline-offset: 3px; }
+    small { color: #667085; }
+    footer { color: #667085; font-size: .88rem; padding: 25px 2px; }
+    @media (max-width: 550px) { main { margin: 22px auto; } article { padding: 24px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <p><a href="/">← CKF Backup 소개</a></p>
+      <h1>개인정보처리방침</h1>
+      <small>시행일: 2026년 10월 20일</small>
+      <p>CKF Backup(이하 “앱”)은 개인 Content Knowledge Factory 자료의 백업과 복원 검증을 위해 소유자가 사용하는 도구입니다.</p>
+      <h2>1. 접근하는 데이터</h2>
+      <p>앱은 Google OAuth를 통해 Google Drive의 <code>drive.file</code> 범위에 접근합니다. 이 권한은 앱이 생성했거나 사용자가 접근을 허가한 Drive 파일을 읽고 생성·수정·삭제하는 데 사용될 수 있습니다. 현재 용도는 소유자의 백업 폴더에 파일을 저장하고, 목록·다운로드·복원 검증을 수행하는 것입니다.</p>
+      <h2>2. 데이터의 이용 목적</h2>
+      <p>데이터는 백업 생성, 백업 무결성 확인, 복원 및 오류 조사에만 사용합니다. 광고 타기팅, 프로파일링, 타인에게 데이터 판매를 목적으로 사용하지 않습니다.</p>
+      <h2>3. 데이터 저장과 전송</h2>
+      <p>백업 대상 파일은 소유자의 기기에서 Google Drive로 직접 전송됩니다. 백업본은 소유자 본인의 Google Drive에 저장됩니다. OAuth 인증 정보는 소유자의 로컬 rclone 설정에 저장되며 이 공개 웹사이트에는 저장하지 않습니다. 이 웹사이트 자체는 Google Drive 파일이나 인증 토큰을 수집하지 않습니다.</p>
+      <h2>4. 공유 및 제3자 서비스</h2>
+      <p>앱은 백업 파일을 제3자에게 판매하거나 별도 CKF 서버로 전송하지 않습니다. 파일 저장과 인증에는 Google Drive 및 Google OAuth 서비스가 사용되며, Google의 해당 서비스 정책이 적용됩니다. 이 공개 안내 페이지는 GitHub Pages에서 제공됩니다.</p>
+      <h2>5. 보유 기간 및 삭제</h2>
+      <p>백업 파일은 소유자가 Google Drive에서 삭제하거나 백업 보존 정책에 따라 정리할 때까지 보존될 수 있습니다. 로컬 인증 정보는 소유자가 연결 설정을 삭제하거나 Google 계정에서 앱 접근을 해제할 때 제거·무효화할 수 있습니다. Drive에 이미 저장된 파일은 OAuth 연결을 해제해도 자동 삭제되지 않습니다.</p>
+      <h2>6. 권한 철회</h2>
+      <p>소유자는 <a href="https://myaccount.google.com/connections">Google 계정의 서드파티 연결 관리</a>에서 앱의 접근을 철회할 수 있습니다. 접근 철회 후에는 새 백업이나 복원 작업을 수행하려면 재인증이 필요합니다.</p>
+      <h2>7. 문의 및 방침 변경</h2>
+      <p>문의는 <a href="https://github.com/goldmoon-jaehun/goldmoon-jaehun.github.io/issues">공개 GitHub Issues</a>에서 접수할 수 있습니다. 문의 시 개인정보나 OAuth 인증 정보를 게시하지 마세요. 기능이나 데이터 처리 방식이 변경되면 이 페이지를 업데이트합니다.</p>
+    </article>
+    <footer>CKF Backup · <a href="/">Home</a></footer>
+  </main>
+</body>
+</html>
